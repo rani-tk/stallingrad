@@ -1,0 +1,51 @@
+<?php
+/*
+|--------------------------------------------------------------------------
+|
+|   Dummy Module
+|
+|--------------------------------------------------------------------------
+*/
+
+return [
+
+    // General
+    
+    'name' => 'Dummy',
+    'description' => '',
+    'creator' => 'Anonymous',
+    'category' => 'General',
+    'customer' => 'General',
+    'icon' => 'fa fa-get-pocket',
+    'optionalModules' => [
+
+    ],
+    'requiredModules' => [
+
+    ],
+    'requiredPackages' => [
+    
+    ],
+
+    // Admin
+
+    'adminDisplayName' => 'Dummy Management',
+    'adminVisible' => 1,
+    'adminDisplayOrder' => 0,
+    'adminNavigationLinks' => [
+    	'Yeni' => '/create',
+    	'Listele' => '/',
+        'Ayarlar' => '/settings/'
+    ],
+    
+    // Visitor
+
+    'displayName' => 'Dummy',
+    'displayVisible' => 1,
+    'displayOrder' => 0,
+    'displayNavigationLinks' => [
+
+    ],
+
+
+];
