@@ -38,18 +38,11 @@ class ConfigController extends Controller {
 		$result = exec($commande);
 		unlink("database.bash");
 
-		// redirect to another path so all changes 
-		// to env values take effect
-		return redirect("/make-migration");
-		
-		
-	}
-
-	protected function makeMigration()
-	{
+		// create all tables
 		Artisan::call('migrate', array('--force' => true));
 		return redirect("/");
-	} 
+		
+	}
 
 	protected function updateDotEnv($key, $newValue, $delim='')
 	{

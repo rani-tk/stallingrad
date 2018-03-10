@@ -10,7 +10,7 @@ class HomeController extends Controller {
 		if ($installed == "0") {
 			return view("installation");
 		} else {
-			return redirect("/");
+			return view("welcome");
 		}
 	}
 }

@@ -11,14 +11,8 @@
 |
 */
 
-Route::get("/installation", "HomeController@checkInstallation");
+Route::get("/", "HomeController@checkInstallation");
 
 Route::post("/setenv", "ConfigController@createDatabase");
-Route::get("/make-migration", "ConfigController@makeMigration");
-
-
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
